@@ -12,31 +12,31 @@ The main purpose of the website is to provide aspiring models with an easy-to-us
 
 The website currently contains the following pages:
 
-1. **Home (index.html)
+1. Home (index.html)
    Introduces The Modeling Academy and provides an overview of its services.
 
-2. **About Us (about.html)
+2. About Us (about.html)
    Provides information about the academy, including its mission, vision and values.
 
-3. **Courses (courses.html)
+3. Courses (courses.html)
    Displays the modeling courses offered by the academy and describes what students can learn.
 
-4. **Gallery (gallery.html)
+4. Gallery (gallery.html)
    Displays images and videos of modeling activities, training sessions and academy events.
 
-5. **Success Stories (success-stories.html)
+5. Success Stories (success-stories.html)
    Contains fictional student testimonials and success stories.
 
-6. **Events (events.html)
+6. Events (events.html)
    Provides information about upcoming workshops, fashion shows and other academy activities.
 
-7. **Registration (registration.html)
+7. Registration (registration.html)
    Contains an online registration form for students interested in joining the academy.
 
-8. **Contact (contact.html)
+8. Contact (contact.html)
    Provides contact information and an enquiry form.
 
-9. **FAQ (faq.html)
+9. FAQ (faq.html)
    Answers common questions about the academy, courses and registration.
 
 ## Project Structure
