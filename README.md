@@ -244,10 +244,6 @@ The following sources were used during the planning and development of the proje
 
 * Figma. 2026. *Figma Design and Prototyping*. Available at: https://www.figma.com/ (Accessed: 1 August 2026).
 
-* Pexels. 2026. *Pexels License*. Available at: https://www.pexels.com/license/ (Accessed: 1 August 2026).
-
-* Unsplash. 2026. *Unsplash License*. Available at: https://unsplash.com/license (Accessed: 1 August 2026).
-
 * OpenAI. 2026. *ChatGPT*. AI-generated images created using ChatGPT for The Modeling Academy website. (Accessed: 1 August 2026).
 
 ### AI-Generated Images
