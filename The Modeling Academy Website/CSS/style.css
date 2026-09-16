@@ -1,0 +1,308 @@
+/* =========================================
+   THE MODELING ACADEMY - MAIN STYLESHEET
+   ========================================= */
+
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE STYLE */
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f5f2;
+    color: #333;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+/* HEADER */
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 2rem 5%;
+}
+
+header p {
+    margin-top: 0.5rem;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.6rem 0.9rem;
+    border-radius: 4px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: #c89b6d;
+    color: white;
+}
+
+/* MAIN CONTENT */
+main {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+section,
+article {
+    background-color: white;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* LINKS */
+a {
+    color: #8b5e3c;
+}
+
+a:hover,
+a:focus {
+    color: #c27b3a;
+}
+
+/* LISTS */
+ul {
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* FORMS */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    font: inherit;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #c89b6d;
+    border-color: #c89b6d;
+}
+
+/* BUTTONS */
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #222;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background-color: #c89b6d;
+}
+
+/* IMAGES */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* FOOTER */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+/* TABLET */
+@media (max-width: 768px) {
+
+    html {
+        font-size: 15px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    header {
+        padding: 1.5rem 4%;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        width: 94%;
+    }
+
+    section,
+    article {
+        padding: 1.5rem;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+    html {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    header {
+        padding: 1.2rem 3%;
+    }
+
+    main {
+        width: 96%;
+        margin: 1rem auto;
+    }
+
+    section,
+    article {
+        padding: 1rem;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 1rem;
+    }
+}
+
+/* CONTENT GRID */
+main {
+    display: grid;
+    gap: 1.5rem;
+}
+
+main section,
+main article {
+    margin-bottom: 0;
+}
+
+/* TABLET AND DESKTOP CONTENT */
+@media (min-width: 769px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main section:first-child {
+        grid-column: 1 / -1;
+    }
+}
+/* GALLERY GRID */
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 769px) {
+    main section:has(img) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    main section:has(img) h2,
+    main section:has(img) p {
+        grid-column: 1 / -1;
+    }
+
+    main section:has(img) img {
+        margin-bottom: 0;
+    }
+}
