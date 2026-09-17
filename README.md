@@ -117,7 +117,7 @@ The-Modeling-Academy/
 │   └── script.js
 │
 ├── Media/
-│   ├── Images/
+│   ├── Image/
 │   └── Videos/
 │
 └── README.md
@@ -222,15 +222,35 @@ Further improvements were made after feedback, including correcting navigation l
 
 ### Version 2.0 – Part 2
 
-* CSS styling and visual design improvements will be added in Part 2.
-* Responsive layout improvements will be implemented.
-* Typography, colours, spacing and page layouts will be refined.
+* Added an external CSS stylesheet to all website pages.
+* Added CSS reset and base styling.
+* Added consistent typography, colours, spacing and page layouts.
+* Added Flexbox navigation and CSS Grid layouts.
+* Added borders, rounded corners and box shadows.
+* Added hover, focus and active states for interactive elements.
+* Added responsive design for desktop, tablet and mobile screen sizes.
+* Added media queries for different screen widths.
+* Improved responsive typography and spacing using relative units.
+* Added responsive images using `srcset` and `sizes`.
+* Tested the website at different screen sizes using browser developer tools.
 
+## Part 2 Testing
+
+The website was tested at desktop, tablet and mobile screen sizes.
+
+Testing included:
+
+* Navigation responsiveness.
+* Responsive page layouts.
+* Image resizing.
+* Text and spacing adjustments.
+* Form responsiveness.
+* CSS hover and focus states.
+* Mobile and tablet media queries.
+* Browser developer tools responsive testing.
 ## References
 
 The following sources were used during the planning and development of the project
-
-## References
 
 * MDN Web Docs. 2026. *HTML: HyperText Markup Language*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML (Accessed: 1 August 2026).
 
