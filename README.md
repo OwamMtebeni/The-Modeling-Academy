@@ -71,7 +71,7 @@ The website includes:
 * Frequently Asked Questions section.
 * Social media links.
 * Embedded map locations.
-* Responsive design planned for development.
+* Responsive design for desktop, tablet and mobile devices.
 
 ## Sitemap
 
@@ -155,7 +155,7 @@ The website uses several HTML5 elements, including:
 
 Images and videos used on the website are stored inside the `Media` folder.
 
-* `Media/Images/` contains website images.
+* `Media/Image/` contains website images.
 * `Media/Videos/` contains website videos.
 
 AI-generated images used in the project will be disclosed in the project's AI usage disclosure documentation in accordance with the module's AI-usage requirements.
@@ -232,6 +232,7 @@ Further improvements were made after feedback, including correcting navigation l
 * Added media queries for different screen widths.
 * Improved responsive typography and spacing using relative units.
 * Added responsive images using `srcset` and `sizes`.
+* Added additional images to improve visual presentation across the website.
 * Tested the website at different screen sizes using browser developer tools.
 
 ## Part 2 Testing
@@ -248,6 +249,20 @@ Testing included:
 * CSS hover and focus states.
 * Mobile and tablet media queries.
 * Browser developer tools responsive testing.
+
+## Part 2 Responsive Design Screenshots
+
+### Desktop View
+<img width="845" height="921" alt="Screenshot 2026-09-17 173720" src="https://github.com/user-attachments/assets/24acd3c6-d189-429f-be7c-d564df002e02" />
+
+
+### Tablet View
+<img width="832" height="877" alt="Screenshot 2026-09-17 173743" src="https://github.com/user-attachments/assets/3946e0fb-7a33-4f45-a840-9e56442a8381" />
+
+
+### Mobile View
+<img width="485" height="492" alt="Screenshot 2026-09-17 173801" src="https://github.com/user-attachments/assets/f59d48cb-b8ce-4bbc-ba5f-68fda9e47a0e" />
+
 ## References
 
 The following sources were used during the planning and development of the project
