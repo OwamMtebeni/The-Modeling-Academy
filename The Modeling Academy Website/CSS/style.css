@@ -2,6 +2,14 @@
    THE MODELING ACADEMY - MAIN STYLESHEET
    ========================================= */
 
+/* COLOUR PALETTE
+   Black:          #1E1B20
+   Gold:           #D4AF37
+   Lavender:       #E6DDF5
+   Light Lavender: #F5F1FA
+   White:          #FFFFFF
+*/
+
 /* CSS RESET */
 * {
     margin: 0;
@@ -18,8 +26,8 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background-color: #f8f5f2;
-    color: #333;
+    background-color: #F5F1FA;
+    color: #1E1B20;
 }
 
 /* HEADINGS */
@@ -45,14 +53,24 @@ h3 {
 
 /* HEADER */
 header {
-    background-color: #222;
-    color: white;
-    text-align: center;
+    background-color: #1E1B20;
+    color: #FFFFFF;
+    text-align: left;
     padding: 2rem 5%;
+    border-bottom: 3px solid #D4AF37;
 }
 
-header p {
-    margin-top: 0.5rem;
+/* WEBSITE BRAND */
+.brand h1 {
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    margin-bottom: 0.3rem;
+}
+
+.brand p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    color: #E6DDF5;
 }
 
 /* NAVIGATION */
@@ -66,7 +84,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     padding: 0.6rem 0.9rem;
     border-radius: 4px;
@@ -74,8 +92,14 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    background-color: #c89b6d;
-    color: white;
+    background-color: #D4AF37;
+    color: #1E1B20;
+}
+
+/* ACTIVE STATE */
+nav a:active,
+button:active {
+    transform: scale(0.98);
 }
 
 /* MAIN CONTENT */
@@ -83,16 +107,19 @@ main {
     width: 90%;
     max-width: 1200px;
     margin: 2rem auto;
+
+    display: grid;
+    gap: 1.5rem;
 }
 
 section,
 article {
-    background-color: white;
+    background-color: #FFFFFF;
     padding: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0;
     border-radius: 8px;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border: 1px solid #E6DDF5;
+    box-shadow: 0 2px 8px rgba(30, 27, 32, 0.08);
 }
 
 p {
@@ -101,12 +128,12 @@ p {
 
 /* LINKS */
 a {
-    color: #8b5e3c;
+    color: #9A7B18;
 }
 
 a:hover,
 a:focus {
-    color: #c27b3a;
+    color: #D4AF37;
 }
 
 /* LISTS */
@@ -130,16 +157,18 @@ select,
 textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 1px solid #bbb;
+    border: 1px solid #C9BFE0;
     border-radius: 4px;
     font: inherit;
+    background-color: #FFFFFF;
+    color: #1E1B20;
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-    outline: 2px solid #c89b6d;
-    border-color: #c89b6d;
+    outline: 2px solid #D4AF37;
+    border-color: #D4AF37;
 }
 
 /* BUTTONS */
@@ -147,15 +176,16 @@ button {
     padding: 0.8rem 1.5rem;
     border: none;
     border-radius: 4px;
-    background-color: #222;
-    color: white;
+    background-color: #D4AF37;
+    color: #1E1B20;
     font-size: 1rem;
     cursor: pointer;
 }
 
 button:hover,
 button:focus {
-    background-color: #c89b6d;
+    background-color: #E6DDF5;
+    color: #1E1B20;
 }
 
 /* IMAGES */
@@ -165,17 +195,66 @@ img {
     display: block;
 }
 
+/* GALLERY */
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* GALLERY GRID */
+@media (min-width: 769px) {
+
+    main section:has(img) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    main section:has(img) h2,
+    main section:has(img) p {
+        grid-column: 1 / -1;
+    }
+
+    main section:has(img) img {
+        margin-bottom: 0;
+    }
+}
+
+/* CONTENT GRID - DESKTOP */
+@media (min-width: 769px) {
+
+    main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main section:first-child {
+        grid-column: 1 / -1;
+    }
+}
+
 /* FOOTER */
 footer {
-    background-color: #222;
-    color: white;
+    background-color: #1E1B20;
+    color: #FFFFFF;
     text-align: center;
     padding: 1.5rem;
     margin-top: 2rem;
+    border-top: 3px solid #D4AF37;
 }
 
 footer p {
     margin-bottom: 0;
+}
+
+footer a {
+    color: #D4AF37;
+}
+
+footer a:hover,
+footer a:focus {
+    color: #E6DDF5;
 }
 
 /* =========================================
@@ -201,6 +280,10 @@ footer p {
         padding: 1.5rem 4%;
     }
 
+    .brand h1 {
+        font-size: 2rem;
+    }
+
     nav {
         flex-direction: column;
     }
@@ -212,6 +295,7 @@ footer p {
 
     main {
         width: 94%;
+        grid-template-columns: 1fr;
     }
 
     section,
@@ -243,6 +327,10 @@ footer p {
         padding: 1.2rem 3%;
     }
 
+    .brand h1 {
+        font-size: 1.7rem;
+    }
+
     main {
         width: 96%;
         margin: 1rem auto;
@@ -259,50 +347,74 @@ footer p {
     button {
         font-size: 1rem;
     }
+    .brand {
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-/* CONTENT GRID */
-main {
-    display: grid;
-    gap: 1.5rem;
+.logo {
+    width: 85px;
+    height: 85px;
+}
+}
+/* LOGO AND BRAND */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-main section,
-main article {
+.brand > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+}
+
+.brand h1 {
+    margin-bottom: 0.2rem;
+}
+
+.brand p {
     margin-bottom: 0;
 }
 
-/* TABLET AND DESKTOP CONTENT */
-@media (min-width: 769px) {
-    main {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    main section:first-child {
-        grid-column: 1 / -1;
-    }
-}
-/* GALLERY GRID */
-section img {
+/* PAGE IMAGES */
+.page-image {
     width: 100%;
-    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+/* STUDENT IMAGES */
+.student-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
     border-radius: 8px;
     margin-bottom: 1rem;
 }
+/* FOOTER LINKS */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
 
-@media (min-width: 769px) {
-    main section:has(img) {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-    }
+.footer-links a {
+    color: #D4AF37;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    main section:has(img) h2,
-    main section:has(img) p {
-        grid-column: 1 / -1;
-    }
-
-    main section:has(img) img {
-        margin-bottom: 0;
-    }
+.footer-links a:hover,
+.footer-links a:focus {
+    color: #E6DDF5;
 }
