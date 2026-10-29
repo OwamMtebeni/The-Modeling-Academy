@@ -148,19 +148,34 @@ document.addEventListener("DOMContentLoaded", function () {
             isValid = false;
         }
 
-        if (isValid) {
-            feedback.textContent =
-                "Thank you, " + name.value.trim() +
-                "! Your enquiry has passed validation. Please use the contact details to send it to the academy.";
-            feedback.style.color = "green";
+if (isValid) {
+    let response = "";
 
-            enquiryForm.reset();
-        } else {
-            feedback.textContent = "Please correct the errors above.";
-            feedback.style.color = "red";
-        }
+    if (course.value === "Runway Training") {
+        response = "Our Runway Training course helps you develop confidence and walking techniques. Contact the academy for fees and availability.";
+    } else if (course.value === "Posing Techniques") {
+        response = "Our Posing Techniques course helps you improve your posing skills. Contact the academy for fees and availability.";
+    } else if (course.value === "Photography Skills") {
+        response = "Our Photography Skills course introduces modelling for photoshoots. Contact the academy for fees and availability.";
+    } else if (course.value === "Personal Presentation") {
+        response = "Our Personal Presentation course helps develop your professional image. Contact the academy for fees and availability.";
+    } else if (course.value === "Modeling Industry Preparation") {
+        response = "Our Industry Preparation course helps you understand the modelling industry. Contact the academy for fees and availability.";
+    } else {
+        response = "Thank you for your interest! Contact the academy for course information, fees and availability.";
+    }
+
+    feedback.textContent =
+        "Thank you, " + name.value.trim() + "! " + response;
+    feedback.style.color = "green";
+
+} else {
+    feedback.textContent = "Please correct the errors above.";
+    feedback.style.color = "red";
+}
     });
 });
+
 
 /* Contact Form Validation */
 document.addEventListener("DOMContentLoaded", function () {
