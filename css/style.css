@@ -662,3 +662,18 @@ textarea:focus {
     margin-top: 15px;
 }
 
+/* Interactive Location Map */
+.location-map {
+    margin: 40px auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+#academy-map {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
