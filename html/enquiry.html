@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enquire about modeling courses, training and registration at The Modeling Academy in Cape Town.">
+    <title>Course Enquiry | The Modeling Academy</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+            <img src="../media/image/logo.png"
+                 alt="The Modeling Academy logo"
+                 class="logo">
+            <div>
+                <h1>The Modeling Academy</h1>
+                <p>Building Confidence. Developing Talent. Creating Opportunities.</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Explore Our Programs</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="events.html">Events</a>
+            <a href="registration.html">Registration</a>
+            <a href="contact.html">Contact</a>
+            <a href="html/enquiry.html">Course Enquiry</a>
+
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Course Enquiry</h2>
+            <p>Interested in joining us? Complete the form below to enquire about our modeling courses.</p>
+
+            <form id="enquiry-form" novalidate>
+                <label for="enquiry-name">Full Name</label>
+                <input type="text" id="enquiry-name" name="name" required>
+                <small class="error-message" id="name-error"></small>
+
+                <label for="enquiry-email">Email Address</label>
+                <input type="email" id="enquiry-email" name="email" required>
+                <small class="error-message" id="email-error"></small>
+
+                <label for="enquiry-course">Course of Interest</label>
+                <select id="enquiry-course" name="course" required>
+                    <option value="">Select a course</option>
+                    <option value="Runway Training">Runway Training</option>
+                    <option value="Posing Techniques">Posing Techniques</option>
+                    <option value="Photography Skills">Photography Skills</option>
+                    <option value="Personal Presentation">Personal Presentation</option>
+                    <option value="Modeling Industry Preparation">Modeling Industry Preparation</option>
+                </select>
+                <small class="error-message" id="course-error"></small>
+
+                <label for="enquiry-message">Your Enquiry</label>
+                <textarea id="enquiry-message" name="message" rows="5" required></textarea>
+                <small class="error-message" id="message-error"></small>
+
+                <button type="submit">Submit Enquiry</button>
+
+                <p id="enquiry-feedback" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 The Modeling Academy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

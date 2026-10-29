@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>The Modeling Academy | Contact</title>
-      <link rel="stylesheet" href="../css/style.css">
+
+    <title>Contact The Modeling Academy | Cape Town</title>
+
+    <meta name="description"
+          content="Contact The Modeling Academy in Cape Town for information about modeling courses, training programs, registration and enquiries.">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/script.js" defer></script>
 </head>
+
 <body>
     <!-- Header and navigation -->
      <header>
         <div class="brand">
-        <img src="../media/image/"
+        <img src="../media/image/logo.png"
              alt="The Modeling Academy logo"
              class="logo">
 
@@ -27,7 +35,11 @@
         <a href="success-stories.html">Success Stories</a>
         <a href="events.html">Events</a>
         <a href="registration.html">Registration</a>
+        <a href="html/enquiry.html">Course Enquiry</a>
     </nav>
+    
+   <script src="../javascript/script.js" defer></script>
+
     </header>   
     <main>
 <!-- Main page content -->
@@ -39,49 +51,50 @@
                 enquiry form below and our team will get back to you.
             </p>
 
-            <form>
+           
+<form id="contact-form" novalidate>
 
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+    <small class="error-message" id="contact-name-error"></small>
+    <br><br>
 
-                <br><br>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    <small class="error-message" id="contact-email-error"></small>
+    <br><br>
 
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+    <small class="error-message" id="contact-phone-error"></small>
+    <br><br>
 
-                <br><br>
+    <label for="program">Program of Interest:</label>
+    <select id="program" name="program" required>
+        <option value="">Select a program</option>
+        <option value="Runway Training">Runway Training</option>
+        <option value="Posing Techniques">Posing Techniques</option>
+        <option value="Photography Skills">Photography Skills</option>
+        <option value="Personal Presentation">Personal Presentation</option>
+        <option value="Industry Preparation">Industry Preparation</option>
+    </select>
+    <small class="error-message" id="contact-program-error"></small>
+    <br><br>
 
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone">
+    <label for="message">Message:</label>
+    <br>
+    <textarea id="message" name="message"
+              rows="6" cols="40" required></textarea>
+    <small class="error-message" id="contact-message-error"></small>
+    <br><br>
 
-                <br><br>
+    <button type="submit">Submit Enquiry</button>
 
-                <label for="program">Program of Interest:</label>
+    <p id="contact-feedback" role="status"
+       aria-live="polite"></p>
 
-                <select id="program" name="program">
-                    <option value="runway">Runway Training</option>
-                    <option value="posing">Posing Techniques</option>
-                    <option value="photography">Photography Skills</option>
-                    <option value="presentation">Personal Presentation</option>
-                    <option value="industry">Industry Preparation</option>
-                </select>
+</form>
 
-                <br><br>
-
-                <label for="message">Message:</label>
-
-                <br>
-
-                <textarea id="message"
-                          name="message"
-                          rows="6"
-                          cols="40"></textarea>
-
-                <br><br>
-
-                <button type="submit">Submit Enquiry</button>
-
-            </form>
         </section>
 
         <section>

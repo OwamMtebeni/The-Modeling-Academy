@@ -1,37 +1,49 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Modeling Academy | Gallery</title>
+
+    <title>Modeling Gallery | The Modeling Academy Cape Town</title>
+
+    <meta name="description"
+          content="View modeling training, runway activities and photography at The Modeling Academy in Cape Town. Explore our gallery of modeling experiences.">
+
     <link rel="stylesheet" href="../css/style.css">
+    <script src="../javascript/script.js" defer></script>
 </head>
+
+
 <body>
     <!-- Header and navigation -->
     <header>
-         <div class="brand">
-        <img src="../media/image/logo.png"
-             alt="The Modeling Academy logo"
-             class="logo">
+        <div class="brand">
+            <img src="../media/image/logo.png"
+                 alt="The Modeling Academy logo"
+                 class="logo">
 
-        <div>
-        <h1>The Modeling Academy</h1> 
-        <p>Building Confidence. Developing Talent. Creating Opportunities.</p>
-     </div>
- </div>
-      <nav>
-        <a href="../index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="programs.html">Explore Our Programs</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="success-stories.html">Success Stories</a>
-        <a href="events.html">Events</a>
-        <a href="registration.html">Registration</a>
-    </nav>
+            <div>
+                <h1>The Modeling Academy</h1>
+                <p>Building Confidence. Developing Talent. Creating Opportunities.</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Explore Our Programs</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="success-stories.html">Success Stories</a>
+            <a href="events.html">Events</a>
+            <a href="registration.html">Registration</a>
+            <a href="html/enquiry.html">Course Enquiry</a>
+        </nav>
     </header>
 
+    <!-- Main page content -->
     <main>
-<!-- Main page content -->
         <section>
             <h2>Our Gallery</h2>
 
@@ -40,39 +52,77 @@
                 training, runway sessions and academy activities.
             </p>
 
+            <!-- Gallery image 1 -->
             <img src="../media/image/model-in-academy.png"
-     srcset="../media/image/model-in-academy-small.jpg 480w, ../media/image/model-in-academy-large.jpg 1000w" sizes="(max-width: 768px) 100vw, 33vw"
-     alt="Model during a runway training session">
+                 srcset="../media/image/model-in-academy-small.jpg 480w,
+                         ../media/image/model-in-academy-large.jpg 1000w"
+                 sizes="(max-width: 768px) 100vw, 33vw"
+                 alt="Model during a runway training session"
+                 class="gallery-image">
 
-<img src="../media/image/model-posing.png"
-     srcset="../media/image/model-posing-small.jpg 480w, ../media/image/model-posing-large.jpg 1000w" sizes="(max-width: 768px) 100vw, 33vw"
-     alt="Model posing during a photography session">
+            <!-- Gallery image 2 -->
+            <img src="../media/image/model-posing.png"
+                 srcset="../media/image/model-posing-small.jpg 480w,
+                         ../media/image/model-posing-large.jpg 1000w"
+                 sizes="(max-width: 768px) 100vw, 33vw"
+                 alt="Model posing during a photography session"
+                 class="gallery-image">
 
-<img src="../media/image/runway.png"
-     srcset="../media/image/runway-small.jpg 480w, ../media/image/runway-large.jpg 1000w" sizes="(max-width: 768px) 100vw, 33vw"
-     alt="Models participating in an academy activity">
+            <!-- Gallery image 3 -->
+            <img src="../media/image/runway.png"
+                 alt="Model on the runway"
+                 class="gallery-image">
 
-<img src="../media/image/image.png"
-     srcset="../media/image/image-small.jpg 480w, ../media/image/image-large.jpg 1000w" sizes="(max-width: 768px) 100vw, 33vw"
-     alt="Modeling academy activity">
+            <!-- Gallery image 4 -->
+            <img src="../media/image/image.png"
+                 srcset="../media/image/image-small.jpg 480w,
+                         ../media/image/image-large.jpg 1000w"
+                 sizes="(max-width: 768px) 100vw, 33vw"
+                 alt="Modeling academy activity"
+                 class="gallery-image">
 
-<img src="../media/image/photography-model.png"
-     srcset="../media/image/photography-model-small.jpg 480w, ../media/image/photography-model-large.jpg 1000w" sizes="(max-width: 768px) 100vw, 33vw"
-     alt="Model during a photography session">
-                
-                </section>
-
-
+            <!-- Gallery image 5 -->
+            <img src="../media/image/photography-model.png"
+                 srcset="../media/image/photography-model-small.jpg 480w,
+                         ../media/image/photography-model-large.jpg 1000w"
+                 sizes="(max-width: 768px) 100vw, 33vw"
+                 alt="Model during a photography session"
+                 class="gallery-image">
+        </section>
     </main>
-<!-- Footer -->
-   <footer>
-    <div class="footer-links">
-        <a href="contact.html">Contact Us</a>
-        <a href="faq.html">FAQ</a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+
+        <p>&copy; 2026 The Modeling Academy. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Gallery Lightbox -->
+    <div id="gallery-lightbox"
+         class="lightbox"
+         role="dialog"
+         aria-modal="true"
+         aria-label="Enlarged gallery image"
+         aria-hidden="true"
+         hidden>
+
+        <button type="button"
+                id="lightbox-close"
+                class="lightbox-close"
+                aria-label="Close enlarged image">
+            &times;
+        </button>
+
+        <img id="lightbox-image" src="" alt="">
+
+        <p id="lightbox-caption"></p>
     </div>
 
-    <p>&copy; 2026 The Modeling Academy. All Rights Reserved.</p>
-</footer>
-    
+    <!-- JavaScript -->
+    <script src="../javascript/script.js" defer></script>
 </body>
 </html>
