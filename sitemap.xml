@@ -1,0 +1,45 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <url>
+        <loc>https://example.com/</loc>
+    </url>
+
+    <url>
+        <loc>https://example.com/html/about.html</loc>
+    </url>
+
+    <url>
+        <loc>https://example.com/html/programs.html</loc>
+    </url>
+
+    <url>
+        <loc>https://example.com/html/gallery.html</loc>
+    </url>
+
+    <url>
+        <loc>https://example.com/html/success-stories.html</loc>
+    </url>
+
+    <url>
+        <loc>https://example.com/html/events.html</loc>
+    </url>
+
+    <url>
+        <loc>https://example.com/html/registration.html</loc>
+    </url>
+
+    <url>
+        <loc>https://example.com/html/contact.html</loc>
+    </url>
+
+    <url>
+        <loc>https://example.com/html/enquiry.html</loc>
+    </url>
+
+    <url>
+        <loc>https://example.com/html/faq.html</loc>
+    </url>
+
+</urlset>
