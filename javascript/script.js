@@ -248,3 +248,28 @@ document.addEventListener("DOMContentLoaded", function () {
             subject + "&body=" + body;
     });
 });
+
+/* Interactive Academy Location Map */
+document.addEventListener("DOMContentLoaded", function () {
+    const mapElement = document.getElementById("academy-map");
+
+    if (!mapElement || typeof L === "undefined") {
+        return;
+    }
+
+    // Cape Town city centre — example location only
+    const map = L.map("academy-map").setView(
+        [-33.9249, 18.4241],
+        13
+    );
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.marker([-33.9249, 18.4241])
+        .addTo(map)
+        .bindPopup("<b>The Modeling Academy</b><br>Cape Town — example location")
+        .openPopup();
+});
+
