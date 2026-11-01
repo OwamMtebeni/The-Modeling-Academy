@@ -43,7 +43,7 @@ The main goals of the website are to:
 
 ## Website Pages
 
-The website currently contains the following nine pages:
+The website currently contains the following 10 pages:
 
 1. **Home (****`index.html`****)** – Introduces The Modeling Academy and provides an overview of the organisation.
 2. **About Us (****`about.html`****)** – Provides information about the academy, including its mission, vision and values.
@@ -54,6 +54,7 @@ The website currently contains the following nine pages:
 7. **Registration (****`registration.html`****)** – Contains an online registration form for students interested in joining the academy.
 8. **Contact (****`contact.html`****)** – Provides contact information and an enquiry form.
 9. **FAQ (****`faq.html`****)** – Answers common questions about the academy, programmes and registration.
+10. **Course inquiry**
 
 ## Key Features and Functionality
 
@@ -111,28 +112,28 @@ A detailed visual sitemap and low-fidelity wireframes have also been created as 
 
 ## Project Structure
 
-The-Modeling-Academy/
+The_Modeling_Academy_Website/
 │
-├── index.html (redirects to HTML/index.html for GitHub Pages)
-├── HTML/
-│   ├── index.html
+├── index.html
+├── html/
 │   ├── about.html
-│   ├── programs.html
-│   ├── gallery.html
-│   ├── success-stories.html
-│   ├── events.html
-│   ├── registration.html
 │   ├── contact.html
-│   └── faq.html
-│
-├── CSS/
+│   ├── enquiry.html
+│   ├── events.html
+│   ├── faq.html
+│   ├── gallery.html
+│   ├── programs.html
+│   ├── registration.html
+│   └── success-stories.html
+├── css/
 │   └── style.css
-│
-├── Javascript/ (reserved for Part 3 JavaScript features)
-│
-├── Media/
-│   └── Image/ (including separate small and large gallery image variants)
-│
+├── javascript/
+│   └── script.js
+├── media/
+│   └── image/
+├── documentation/
+├── robots.txt
+├── sitemap.xml
 └── README.md
 
 
@@ -270,9 +271,6 @@ Further improvements were made after feedback, including correcting navigation l
 - Tested the enquiry and contact forms to confirm that validation works.
 - Tested the website's navigation and interactive features.
 - Prepared the website for GitHub Pages deployment.
-
-### Part 3 – Enhancing Functionality and SEO
-
 - Added JavaScript search and filtering to the Programs page so visitors can find courses.
 - Added feedback messages to show matching courses or indicate when no results are found.
 - Implemented an interactive Leaflet map on the Contact page to display the academy's location in Cape Town.
@@ -334,6 +332,9 @@ The following sources were used during the planning and development of the proje
 * Figma. 2026. *Figma Design and Prototyping*. Available at: https://www.figma.com/ (Accessed: 1 August 2026).
 
 * OpenAI. 2026. *ChatGPT*. AI-generated images created using ChatGPT for The Modeling Academy website. (Accessed: 1 August 2026).
+
+* Leaflet. (n.d.). *Leaflet – JavaScript library for interactive maps*. https://leafletjs.com/
+* OpenStreetMap. (n.d.). *OpenStreetMap*. https://www.openstreetmap.org/
 
 ### AI-Generated Images
 
