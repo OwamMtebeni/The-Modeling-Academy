@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <script src="../javascript/script.js" defer></script>
     <link rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+     href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+  </script>
 </head>
 
 <body>
@@ -96,26 +99,16 @@
        aria-live="polite"></p>
 
 </form>
+<section>
+        <h2>Our Location</h2>
 
-        </section>
+        <p>Find us in Cape Town, South Africa.</p>
 
-        <section>
-            <h2>Our Location</h2>
+     <div id="map"></div>
 
-            <p>Cape Town, South Africa</p>
-
-        </section>
-
-    </main>
-    
-<!-- Interactive Academy Location Map -->
-<section class="location-map">
-    <h2>Find Us</h2>
-    <p>Explore the map below to view our academy location.</p>
-
-    <div id="academy-map"></div>
 </section>
 
+    </main>
     <!-- Footer -->
     <footer>
     <div class="footer-links">
@@ -124,7 +117,6 @@
     </div>
 
     <p>&copy; 2026 The Modeling Academy. All Rights Reserved.</p>
-</footer>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</footer> 
 </body>
 </html>

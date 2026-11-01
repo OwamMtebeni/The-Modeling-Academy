@@ -248,28 +248,69 @@ document.addEventListener("DOMContentLoaded", function () {
             subject + "&body=" + body;
     });
 });
-
-/* Interactive Academy Location Map */
+/* Program Search and Filter */
 document.addEventListener("DOMContentLoaded", function () {
-    const mapElement = document.getElementById("academy-map");
 
-    if (!mapElement || typeof L === "undefined") {
+    const searchInput = document.getElementById("program-search");
+    const courses = document.querySelectorAll("main article");
+    const feedback = document.getElementById("search-feedback");
+
+    if (!searchInput || !feedback || courses.length === 0) {
         return;
     }
 
-    // Cape Town city centre — example location only
-    const map = L.map("academy-map").setView(
-        [-33.9249, 18.4241],
-        13
+    searchInput.addEventListener("input", function () {
+
+        const searchText = searchInput.value.toLowerCase().trim();
+        let visibleCourses = 0;
+
+        courses.forEach(function (course) {
+
+            const courseText = course.textContent.toLowerCase();
+
+            if (courseText.includes(searchText)) {
+                course.style.display = "";
+                visibleCourses++;
+            } else {
+                course.style.display = "none";
+            }
+
+        });
+
+        if (visibleCourses === 0) {
+            feedback.textContent = "No matching courses found.";
+        } else {
+            feedback.textContent =
+                visibleCourses + " course(s) found.";
+        }
+
+    });
+
+});
+/* Interactive Cape Town Map */
+document.addEventListener("DOMContentLoaded", function () {
+
+    const mapElement = document.getElementById("map");
+
+    if (!mapElement) {
+        return;
+    }
+
+    const map = L.map("map").setView(
+        [-33.9249, 18.4241], 12
     );
 
-    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }
+    ).addTo(map);
 
     L.marker([-33.9249, 18.4241])
-        .addTo(map)
-        .bindPopup("<b>The Modeling Academy</b><br>Cape Town — example location")
+      s  .addTo(map)
+        .bindPopup("Cape Town, South Africa")
         .openPopup();
-});
 
+});

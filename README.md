@@ -77,26 +77,40 @@ The website includes:
 
 The website structure is organised around the following main pages:
 
-```text
-The Modeling Academy
+The_Modeling_Academy_Website/
 │
-└── Home
-    │
-    ├── About Us
-    ├── Programs
-    ├── Gallery
-    ├── Success Stories
-    ├── Events
-    ├── Registration
-    ├── Contact
-    └── FAQ
-```
+├── index.html
+│
+├── html/
+│   ├── about.html
+│   ├── contact.html
+│   ├── enquiry.html
+│   ├── events.html
+│   ├── faq.html
+│   ├── gallery.html
+│   ├── programs.html
+│   ├── registration.html
+│   └── success-stories.html
+│
+├── css/
+│   └── style.css
+│
+├── javascript/
+│   └── script.js
+│
+├── media/
+│   └── image/
+│
+├── documentation/
+│
+├── robots.txt
+├── sitemap.xml
+└── README.md
 
 A detailed visual sitemap and low-fidelity wireframes have also been created as part of the Website Structure and Planning documentation.
 
 ## Project Structure
 
-```text
 The-Modeling-Academy/
 │
 ├── index.html (redirects to HTML/index.html for GitHub Pages)
@@ -120,7 +134,7 @@ The-Modeling-Academy/
 │   └── Image/ (including separate small and large gallery image variants)
 │
 └── README.md
-```
+
 
 ## Technologies Used
 
@@ -242,6 +256,28 @@ Further improvements were made after feedback, including correcting navigation l
 * Created separate small and large gallery image files and corrected `srcset` references.
 * Added a root `index.html` redirect so the styled website opens from the repository root without maintaining a second website copy.
 * Documented the responsive breakpoints used by the stylesheet.
+
+### Version 3.0 – Part 3: JavaScript Functionality and SEO
+
+- Added JavaScript validation to the enquiry form to check required fields and display error messages.
+- Improved contact form validation and user feedback.
+- Added a gallery lightbox to view images in a larger format.
+- Added an interactive FAQ accordion.
+- Added a responsive hamburger menu for mobile navigation.
+- Added CSS animations and transitions to improve the user experience.
+- Improved SEO by updating page titles, meta descriptions, headings and image alternative text.
+- Added `robots.txt` and `sitemap.xml` to support search engine crawling.
+- Tested the enquiry and contact forms to confirm that validation works.
+- Tested the website's navigation and interactive features.
+- Prepared the website for GitHub Pages deployment.
+
+### Part 3 – Enhancing Functionality and SEO
+
+- Added JavaScript search and filtering to the Programs page so visitors can find courses.
+- Added feedback messages to show matching courses or indicate when no results are found.
+- Implemented an interactive Leaflet map on the Contact page to display the academy's location in Cape Town.
+- Improved website interactivity using JavaScript and DOM manipulation.
+- Updated project documentation to reflect the website's ten HTML pages and current folder structure.
 
 ## Responsive Breakpoints
 
